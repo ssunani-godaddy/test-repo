@@ -2,7 +2,7 @@
 
 name: CICD
 # run-name: Build Image > Commit SHA - ${{ inputs.commit_sha }}
-run-name: ${{ head -c 15 <<< "${{ inputs.commit_sha }}" }}
+run-name: ${ head -c 15 <<< "${{ inputs.commit_sha }}" }
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
