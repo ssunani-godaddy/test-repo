@@ -1,18 +1,19 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CICD
-inputs:
-  commit_sha:
-    description: "Commit SHA"
-    required: false
-  image_name:
-    description: "Image"
-    required: true
+name: CICD 
+
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   workflow_dispatch:
+    inputs:
+      commit_sha:
+        description: "Commit SHA"
+        required: false
+      image_name:
+        description: "Image"
+        required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
