@@ -2,7 +2,7 @@
 
 name: CICD ${{inputs.image_name}}
 # run-name: Build Image > Commit SHA - ${{ inputs.commit_sha }}
-run-name: "${{ inputs.commit_sha }}  | sed -rn 's/[^0-9]*([0-9]+).*/\1/gp'"
+run-name: "${{ inputs.commit_sha }}  | sed -rn 's/[^0-9]*([0-9]+).*/gp'"
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
